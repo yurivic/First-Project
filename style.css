@@ -1,0 +1,181 @@
+/* Fundo do 'site' */
+body {
+  /* background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+  /* Fonts Inter */
+}
+
+/* Borda para medida */
+#container {
+  /* border: 0.5px solid white; Borda para mostrar o espaçamento da div */
+  width: 360px; /*Medidas da div */
+  /* height: 712px; Medidas da div */
+  margin: 56px auto 0; /*Centralização de caixa */
+  padding: 0 24px;
+}
+
+/* profile */
+#profile {
+  padding: 24px;
+}
+
+/* Dando vida a imagem */
+#profile img {
+  width: 112px;
+  display: block;
+  margin: auto;
+}
+
+#profile p {
+  font-weight: 500px;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* swith */
+
+#swith {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+  height: 50px;
+}
+
+#swith button {
+  width: 32px;
+  height: 32px;
+  background: white var(--swith-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+#swith span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 9999px;
+  margin: 0 auto;
+}
+
+.light #swith button {
+  right: 0;
+  left: initial;
+}
+
+/* zerando qualquer espaço*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05)
+  --surface-color-links:  rgba(0, 0, 0, 0.1);
+  --swith-bg-url: url(./assets/moon-stars.svg)
+  /* --color-links: white; */
+}
+
+.light {
+  --text-color: rgb(0, 0, 0);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --surface-color-links:  rgba(253, 253, 253, 0.1);
+  --swith-bg-url: url(./assets/sun.svg)
+  /* --color-links: black; */
+}
+
+/* Sequencia é top, right, bottom e left */
+
+/* links */
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: normal; /* normal = 400*/
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid white;
+}
+
+/* social links */
+
+#social-links {
+  display: flex;
+  /* gap: 16px; Serve para gerar espaçamento entre alguma coisa  */
+  padding: 24px; /* Altura dos icones em relação a caixa */
+  font-size: 24px;
+  justify-content: center; /* Alinhanento do icones ao centro da tela */
+}
+
+#social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: var(--color-links); */
+  color: var(--text-color);
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--surface-color-links)
+}
+
+/* rodapé */
+
+footer {
+  padding: 24px;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer a {
+  list-style: none;
+  text-decoration: none;
+}
