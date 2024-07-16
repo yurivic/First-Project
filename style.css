@@ -20,7 +20,8 @@ body * {
 /* Borda para medida */
 #container {
   /* border: 0.5px solid white; Borda para mostrar o espaçamento da div */
-  width: 360px; /*Medidas da div */
+  width: 100%; /*Medidas da div */
+  max-width: 588px;
   /* height: 712px; Medidas da div */
   margin: 56px auto 0; /*Centralização de caixa */
   padding: 0 24px;
