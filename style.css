@@ -100,7 +100,7 @@ body * {
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05)
   --surface-color-links:  rgba(0, 0, 0, 0.1);
-  --swith-bg-url: url(./assets/moon-stars.svg)
+  --swith-bg-url: url(./assets/moon-stars.svg);
   /* --color-links: white; */
 }
 
@@ -111,7 +111,7 @@ body * {
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --surface-color-links:  rgba(253, 253, 253, 0.1);
-  --swith-bg-url: url(./assets/sun.svg)
+  --swith-bg-url: url(./assets/sun.svg);
   /* --color-links: black; */
 }
 
@@ -183,7 +183,7 @@ footer a {
   text-decoration: none;
 }
 
-/* media queries , ou , adaptaçaõ da viewport  */
+/* media queries , ou , adaptação da viewport  */
 @media(min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
